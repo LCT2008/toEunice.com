@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello :)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 320px;
+        }
+        button {
+            padding: 24px 48px;
+            font-size: 35px;
+            font-family: Trebuchet 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: auto;
+            cursor: pointer;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    function askQuestion() {
+        while (true) {
+            var answer = confirm("Would you like to be my girlfriend?");
+            if (answer) {
+                // User clicked 'Yes'
+                sendEmail();
+                break; // Exit the loop
+            } else {
+               pleaseFunction();
+            }
+        }
+    }
+
+    function pleaseFunction() {
+        while (true){
+        var confirmAgain = confirm("Please?");
+        if (confirmAgain) {
+            sendEmail();
+        } else {
+            pleaseFunction();
+            // User clicked 'No' again
+        }
+    }
+}
+
+    function sendEmail() {
+        // You should handle the email sending on the server side.
+        // This is just a placeholder for demonstration purposes.
+        var emailContent = "Yes";
+        var emailAddress = "chinteeinfo@gmail.com";
+        alert("Thank you! Have a nice day baby ;)");
+        // You can use a service like Email.js or a server-side script to send the email.
+        sendEmailToServer(emailAddress, emailContent);
+    }
+</script>
+
+<button onclick="askQuestion()">Here's a question for my lovely Eunice Goon</button>
+
+</body>
+</html>
