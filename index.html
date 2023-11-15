@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello :)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIfmNkjONV9g2tETbXXy_6S9yvvXWt3vDzog&usqp=CAU">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 320px;
-        }
         button {
+            margin-top: 320px;
             padding: 24px 48px;
             font-size: 35px;
             font-family: Trebuchet 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            margin: auto;
             cursor: pointer;
             border-radius: 30px;
             border: none;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             background-color: darkblue;
             color: white;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: darkblue;
+            transform: scale(1.05);
+            transition: 0.4s;
         }
     </style>
 </head>
-<body style="background-color:honeydew;">
+<body style="margin-left: auto; margin-right: auto; text-align: center;">
 
 <script>
     function askQuestion() {
         while (true) {
-            var answer = confirm("Would you like to be my girlfriend?");
+            var answer = confirm("Would you like to be my girlfriend 👉👈?");
             if (answer) {
                 // User clicked 'Yes'
                 sendEmail();
@@ -58,13 +63,13 @@
         // This is just a placeholder for demonstration purposes.
         var emailContent = "Yes";
         var emailAddress = "chinteeinfo@gmail.com";
-        alert("Thank you! Have a nice day baby ;)");
+        alert("Thank you! Let me know your answer and Have a nice day my baby 😘");
         // You can use a service like Email.js or a server-side script to send the email.
         sendEmailToServer(emailAddress, emailContent);
     }
 </script>
 
-<button onclick="askQuestion()">Here's a question for my lovely Eunice Goon</button>
+<button onclick="askQuestion()">Here's a question for my lovely Eunice Goon <i class="fa fa-heart"></i> </button>
 
 </body>
 </html>
